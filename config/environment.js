@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'pdx-food-cart-review',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://pdx-foodcartreview.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
