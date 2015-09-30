@@ -1,17 +1,21 @@
 .foodcart-jumbotron{
-  min-height:330px;
+  min-height: 330px;
 }
 
 }
 .foodcart-image-div {
-  height:66%;
+  height: 66%;
 }
 
 .foodcart-info-div {
-  height:33%;
+  height: 33%;
 }
 
 .review-jumbo{
-  padding:1rem;
-  width:50%;
+  padding: 1rem;
+  width:   50%;
+}
+.map-display {
+  height: 600px;
+  width:  600px
 }
