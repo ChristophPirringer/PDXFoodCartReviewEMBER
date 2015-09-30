@@ -9,6 +9,11 @@ export default Ember.Route.extend({
   },
   actions: {
     destroyFoodcart(foodcart) {
+      foodcart.get('reviews').then(function(reviews){
+        reviews.forEach(function(review) {
+          review.destroyRecord();
+        });
+      });
       foodcart.destroyRecord();
       this.transitionTo('admin');
     },

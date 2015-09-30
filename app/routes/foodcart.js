@@ -10,10 +10,23 @@ export default Ember.Route.extend({
   actions: {
     createReview(foodcart, params) {
       var newReview = this.store.createRecord('review', params);
-      debugger;
       newReview.save();
       foodcart.save();
 
+      this.transitionTo('foodcart');
+    },
+    editReview(review, params) {
+      debugger;
+      Object.keys(params).forEach(function(key) {
+        if (params[key] !== undefined) {
+          review.set(key, params[key]);
+        }
+      });
+      review.save();
+      this.transitionTo('foodcart');
+    },
+    destroyReview(review) {
+      review.destroyRecord();
       this.transitionTo('foodcart');
     }
   }

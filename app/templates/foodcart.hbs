@@ -7,11 +7,12 @@
 <h4><img src={{model.picture}} alt='artery clogging goodness'></h4>
 <hr>
 
-<ul>
-  {{#each model.reviews as |review|}}
-    <li>{{review-info-tile review=review foodcart=model}}</li>
-  {{/each}}
-</ul>
+
+{{#each model.reviews as |review|}}
+  {{review-info-tile review=review foodcart=model}}
+  {{review-edit-tile review=review editReview='editReview' destroyReview='destroyReview'}}
+{{/each}}
+
 
 
 <h3>Add a review:</h3>
