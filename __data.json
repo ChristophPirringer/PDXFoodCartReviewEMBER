@@ -3,11 +3,34 @@
     "name": "Bobs Burgers",
     "website": "www.bobsburgers.com",
     "phone": 5551234,
+    "neighborhood": "somewhere",
     "address": "here, there, everywhere",
     "picture": "http://www.ettores.com/wp-content/uploads/2012/10/Ettore-Burger-150x150.jpeg",
     "rating": 1,
     "latitude": 41.40338,
-    "longitute": 2.17403
+    "longitude": 2.17403
+  },
+  {
+    "name": "Beast",
+    "website": "www.beastpdx.com",
+    "phone": 5551234,
+    "neighborhood": "North Portland",
+    "address": "30th and killingsworth",
+    "picture": "http://i.imgur.com/YB4OEDY.png?1",
+    "rating": 100,
+    "latitude": 41.40338,
+    "longitude": 2.17403
+  },
+  {
+    "name": "Ox",
+    "website": "www.oxpdx.com",
+    "phone": 5551234,
+    "neighborhood": "NE",
+    "address": "MLK blvd.",
+    "picture": "http://tennesseegrassfed.com/wp-content/uploads/2015/06/steak-on-the-grill-150x150.jpg",
+    "rating": 1,
+    "latitude": 41.40338,
+    "longitude": 2.17403
   }],
 
 "reviews": [{

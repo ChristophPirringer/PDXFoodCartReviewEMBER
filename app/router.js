@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('foodcart', {path: '/foodcart/:foodcart_id'});
+  this.route('admin');
 });
 
 export default Router;

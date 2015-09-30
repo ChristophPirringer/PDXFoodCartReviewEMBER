@@ -1,0 +1,7 @@
+{{outlet}}
+placeholder for admin.hbs
+<ul>
+  {{#each model.foodcarts as |foodcart|}}
+    <li>{{foodcart-edit-tile foodcart=foodcart editFoodcart='editFoodcart' destroyFoodcart='destroyFoodcart'}}</li>
+  {{/each}}
+</ul>

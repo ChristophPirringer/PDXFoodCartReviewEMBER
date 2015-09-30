@@ -1,0 +1,25 @@
+{{outlet}}
+<h3>Details for: {{model.name}}</h3>
+<hr>
+<h4>address: {{model.address}}</h4>
+<h4>Phone #: {{model.phone}}</h4>
+<h4>Rating: {{model.rating}}</h4>
+<h4><img src={{model.picture}} alt='artery clogging goodness'></h4>
+<hr>
+
+<h3>Add a review:</h3>
+{{foodcart-review-tile foodcart=model createReview="createReview"}}
+
+
+
+
+<!-- address: DS.attr(),
+neighborhood: DS.attr(),
+latitude: DS.attr(),
+longitude: DS.attr(),
+name: DS.attr(),
+phone: DS.attr(),
+picture: DS.attr(),
+rating: DS.attr(),
+website: DS.attr(),
+reviews: DS.hasMany('review', {async: true}) -->

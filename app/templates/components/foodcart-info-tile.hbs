@@ -1,17 +1,16 @@
 <div class="col-md-4">
   <div class="jumbotron foodcart-jumbotron" style="background-color:rgba(240,240,240,0.8);">
-
-  {{foodcart.name}}
-  <br>
-  {{foodcart.rating}}
-  <br>
-  {{foodcart.address}}
-  <br>
-  {{foodcart.phone}}
-  <br>
-  <img src={{foodcart.picture}} alt="cement for your arteries">
-  <br>
-  {{foodcart.website}}
+  <div class=foodcart-info-div>
+    <span class="glyphicon glyphicon-cutlery"></span> {{foodcart.name}}
+    <br>
+    <span class="glyphicon glyphicon-thumbs-up"></span> {{foodcart.rating}}
+    <br>
+    <span class="glyphicon glyphicon-home"></span> {{foodcart.neighborhood}}
+    <br>
+  </div>
+  <div class="foodcart-image-div">
+    <img src={{foodcart.picture}} alt="cement for your arteries">
+  </div>
 
   </div>
 </div>

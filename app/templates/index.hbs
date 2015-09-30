@@ -1,5 +1,5 @@
 <p>placeholder for index.hbs</p>
 
 {{#each model.foodcarts as |foodcart|}}
-  {{foodcart-info-tile foodcart=foodcart}}
+  {{#link-to 'foodcart' foodcart.id}}{{foodcart-info-tile foodcart=foodcart}}{{/link-to}}
 {{/each}}
