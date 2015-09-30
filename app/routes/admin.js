@@ -20,6 +20,12 @@ export default Ember.Route.extend({
       });
       foodcart.save();
       this.transitionTo('admin');
+    },
+    createFoodcart(params) {
+      var newCart = this.store.createRecord('foodcart', params);
+      debugger;
+      newCart.save();
+      this.transitionTo('admin');
     }
   }
 });

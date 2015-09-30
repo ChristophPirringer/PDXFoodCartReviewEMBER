@@ -1,5 +1,4 @@
-{{outlet}}
-placeholder for admin.hbs
+{{foodcart-new-tile createFoodcart='createFoodcart'}}
 <ul>
   {{#each model.foodcarts as |foodcart|}}
     <li>{{foodcart-edit-tile foodcart=foodcart editFoodcart='editFoodcart' destroyFoodcart='destroyFoodcart'}}</li>
