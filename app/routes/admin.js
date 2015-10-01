@@ -28,7 +28,6 @@ export default Ember.Route.extend({
     },
     createFoodcart(params) {
       var newCart = this.store.createRecord('foodcart', params);
-      debugger;
       newCart.save();
       this.transitionTo('admin');
     }

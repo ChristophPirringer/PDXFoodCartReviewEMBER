@@ -16,7 +16,7 @@ export default Ember.Component.extend({
         rating: this.get('rating'),
         body: this.get('body'),
         foodcart: foodcart
-      }
+      };
       this.sendAction('createReview', foodcart, params);
       this.set('formShowing', false);
     }

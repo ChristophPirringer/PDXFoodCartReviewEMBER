@@ -2,10 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('foodcart', params.foodcart_id)
-    // return Ember.RSVP.hash ({
-    //   reviews: this.store.findAll('review'),
-    // });
+    return this.store.findRecord('foodcart', params.foodcart_id);
   },
   actions: {
     createReview(foodcart, params) {
@@ -16,7 +13,6 @@ export default Ember.Route.extend({
       this.transitionTo('foodcart');
     },
     editReview(review, params) {
-      debugger;
       Object.keys(params).forEach(function(key) {
         if (params[key] !== undefined) {
           review.set(key, params[key]);

@@ -5,13 +5,19 @@ export default Ember.Component.extend({
 
   actions: {
     showMap(foodcart) {
-      debugger;
       var container = this.$('.map-display')[0];
       var options = {
         center: this.get('map').center(foodcart.get('latitude'), foodcart.get('longitude')),
         zoom: 15
       };
-      this.get('map').findMap(container, options);
+      var latLng = {lat: options.center.H, lng: options.center.L};
+      var marker = new google.maps.Marker({
+        position: latLng,
+        map: this.get('map').findMap(container, options),
+        title: 'Hello World!'
+      });
+
+      this.get('map').findMap(container, marker);
     }
   }
 });

@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         date: this.get('date') || undefined,
         rating: this.get('rating') || undefined,
         body: this.get('body') || undefined
-      }
+      };
       this.sendAction('editReview', review, params);
       this.set('formShowing', false);
     },

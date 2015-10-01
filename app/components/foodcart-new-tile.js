@@ -22,8 +22,7 @@ export default Ember.Component.extend({
         picture: this.get('picture') || undefined,
         website: this.get('website') || undefined,
         rating: this.get('rating') || undefined
-      }
-      debugger;
+      };
       this.sendAction('createFoodcart', params);
       this.set('formShowing', false);
     }
