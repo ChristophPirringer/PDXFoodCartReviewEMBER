@@ -1,4 +1,4 @@
-{{general-map foodcarts=model.foodcarts}}
+{{general-map foodcarts=model.foodcarts hideMap='hideMap' showMap='showMap'}}
 {{#each model.foodcarts as |foodcart|}}
   {{#link-to 'foodcart' foodcart.id}}{{foodcart-info-tile foodcart=foodcart}}{{/link-to}}
 {{/each}}

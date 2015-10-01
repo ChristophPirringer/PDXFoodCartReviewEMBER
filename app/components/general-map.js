@@ -2,10 +2,16 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   map: Ember.inject.service('google-map'),
+  mapShowing: false,
 
   actions: {
-    showMap(foodcarts) {
 
+    hideMap() {
+      this.set('mapShowing', false);
+
+    },
+    showMap(foodcarts) {
+      this.set('mapShowing', true)
       var coordArray = [];
       var contentArray = [];
       var markerarray = [];
@@ -39,11 +45,8 @@ export default Ember.Component.extend({
       markerarray.forEach(function(marker, j){
         google.maps.event.addListener(marker, 'click',  function() {
           infowindow.setContent(contentArray[j-1][0] + " " + contentArray[j-1][1]);
-        console.log("j at setContent" + j);
           infowindow.open(map, this);
         });
-        console.log("j" + j);
-        console.log('content' + contentArray[j][0]);
         j++;
       });
 

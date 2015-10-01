@@ -1,4 +1,6 @@
 <button {{action 'showMap' foodcarts}}>View Map of all Carts</button>
+<button {{action 'hideMap'}}>Hide Map</button>
 
-
-<div class='map-display'></div>
+{{#if mapShowing}}
+  <div class='map-display'></div>
+{{/if}}
